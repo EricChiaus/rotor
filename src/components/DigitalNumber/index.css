@@ -1,0 +1,245 @@
+.digit {
+    text-align: left;
+    position: relative;
+    width: 28px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 4px;
+    background-color: black;
+}
+
+.digit span {
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+    background-color: white;
+}
+
+.d1 {
+    height: 5px;
+    width: 16px;
+    top: 0;
+    left: 6px;
+}
+.d1:before {
+    border-width: 0 5px 5px 0 !important;
+    border-right-color: white !important;
+    left: -5px;
+}
+.d1:after {
+    border-width: 0 0 5px 5px !important;
+    border-left-color: white !important;
+    right: -5px;
+}
+
+.d2 {
+    height: 5px;
+    width: 16px;
+    top: 24px;
+    left: 6px;
+}
+.d2:before {
+    border-width: 3px 4px 2px !important;
+    border-right-color: white !important;
+    left: -8px;
+}
+.d2:after {
+    border-width: 3px 4px 2px !important;
+    border-left-color: white !important;
+    right: -8px;
+}
+
+.d3 {
+    height: 5px;
+    width: 16px;
+    top: 48px;
+    left: 6px;
+}
+.d3:before {
+    border-width: 5px 5px 0 0 !important;
+    border-right-color: white !important;
+    left: -5px;
+}
+.d3:after {
+    border-width: 5px 0 0 5px !important;
+    border-left-color: white !important;
+    right: -5px;
+}
+
+.d4 {
+    width: 5px;
+    height: 14px;
+    top: 7px;
+    left: 0;
+}
+.d4:before {
+    border-width: 0 5px 5px 0 !important;
+    border-bottom-color: white !important;
+    top: -5px;
+}
+.d4:after {
+    border-width: 0 0 5px 5px !important;
+    border-left-color: white !important;
+    bottom: -5px;
+}
+
+.d5 {
+    width: 5px;
+    height: 14px;
+    top: 7px;
+    right: 0;
+}
+.d5:before {
+    border-width: 0 0 5px 5px !important;
+    border-bottom-color: white !important;
+    top: -5px;
+}
+.d5:after {
+    border-width: 5px 0 0 5px !important;
+    border-top-color: white !important;
+    bottom: -5px;
+}
+
+.d6 {
+    width: 5px;
+    height: 14px;
+    top: 32px;
+    left: 0;
+}
+.d6:before {
+    border-width: 0 5px 5px 0 !important;
+    border-bottom-color: white !important;
+    top: -5px;
+}
+.d6:after {
+    border-width: 0 0 5px 5px !important;
+    border-left-color: white !important;
+    bottom: -5px;
+}
+
+.d7 {
+    width: 5px;
+    height: 14px;
+    top: 32px;
+    right: 0;
+}
+.d7:before {
+    border-width: 0 0 5px 5px !important;
+    border-bottom-color: white !important;
+    top: -5px;
+}
+.d7:after {
+    border-width: 5px 0 0 5px !important;
+    border-top-color: white !important;
+    bottom: -5px;
+}
+
+.digit span:before,
+.digit span:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+}
+
+/* 1 */
+
+.digit.one .d5,
+.digit.one .d7 {
+    opacity: 1;
+}
+
+/* 2 */
+
+.digit.two .d1,
+.digit.two .d5,
+.digit.two .d2,
+.digit.two .d6,
+.digit.two .d3 {
+    opacity: 1;
+}
+
+/* 3 */
+
+.digit.three .d1,
+.digit.three .d5,
+.digit.three .d2,
+.digit.three .d7,
+.digit.three .d3 {
+    opacity: 1;
+}
+
+/* 4 */
+
+.digit.four .d5,
+.digit.four .d2,
+.digit.four .d4,
+.digit.four .d7 {
+    opacity: 1;
+}
+
+/* 5 */
+
+.digit.five .d1,
+.digit.five .d2,
+.digit.five .d4,
+.digit.five .d3,
+.digit.five .d7 {
+    opacity: 1;
+}
+
+/* 6 */
+
+.digit.six .d1,
+.digit.six .d2,
+.digit.six .d4,
+.digit.six .d3,
+.digit.six .d6,
+.digit.six .d7 {
+    opacity: 1;
+}
+
+/* 7 */
+
+.digit.seven .d1,
+.digit.seven .d5,
+.digit.seven .d7 {
+    opacity: 1;
+}
+
+/* 8 */
+
+.digit.eight .d1,
+.digit.eight .d2,
+.digit.eight .d3,
+.digit.eight .d4,
+.digit.eight .d5,
+.digit.eight .d6,
+.digit.eight .d7 {
+    opacity: 1;
+}
+
+/* 9 */
+
+.digit.nine .d1,
+.digit.nine .d2,
+.digit.nine .d3,
+.digit.nine .d4,
+.digit.nine .d5,
+.digit.nine .d7 {
+    opacity: 1;
+}
+
+/* 0 */
+
+.digit.zero .d1,
+.digit.zero .d3,
+.digit.zero .d4,
+.digit.zero .d5,
+.digit.zero .d6,
+.digit.zero .d7 {
+    opacity: 1;
+}
