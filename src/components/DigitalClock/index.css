@@ -1,0 +1,8 @@
+.digital-clock {
+    background-color: black;
+    display: flex;
+    padding: 24px;
+    width: 240px;
+    justify-content: center;
+    align-items: center;
+}
