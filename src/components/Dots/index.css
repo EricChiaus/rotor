@@ -1,0 +1,15 @@
+.dots {
+    width: 5px;
+    background-color: black;
+}
+
+.dots:before,
+.dots:after {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    content: '';
+    position: relative;
+    left: 0;
+    background-color: white;
+}
