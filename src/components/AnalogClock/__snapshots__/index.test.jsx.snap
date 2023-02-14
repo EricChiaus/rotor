@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AnalogClock /> matches the snapshot 1`] = `
+<div>
+  <div
+    class="analog-clock"
+  >
+    <div
+      class="hours"
+      style="transform: rotateZ(30deg;"
+    />
+    <div
+      class="minutes"
+      style="transform: rotateZ(0deg;"
+    />
+    <div
+      class="seconds"
+      style="transform: rotateZ(354deg;"
+    />
+  </div>
+</div>
+`;

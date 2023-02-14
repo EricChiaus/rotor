@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DigitalNumber /> given no parameter matches the snapshot 1`] = `
+<div>
+  <div
+    class="zero digit"
+  >
+    <span
+      class="d1"
+    />
+    <span
+      class="d2"
+    />
+    <span
+      class="d3"
+    />
+    <span
+      class="d4"
+    />
+    <span
+      class="d5"
+    />
+    <span
+      class="d6"
+    />
+    <span
+      class="d7"
+    />
+  </div>
+</div>
+`;
+
+exports[`<DigitalNumber /> matches the snapshot 1`] = `
+<div>
+  <div
+    class="one digit"
+  >
+    <span
+      class="d1"
+    />
+    <span
+      class="d2"
+    />
+    <span
+      class="d3"
+    />
+    <span
+      class="d4"
+    />
+    <span
+      class="d5"
+    />
+    <span
+      class="d6"
+    />
+    <span
+      class="d7"
+    />
+  </div>
+</div>
+`;
