@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+## Package
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This package is for Rotor Studio's clock code challenge.
 
 ## Available Scripts
 
@@ -18,6 +18,10 @@ You may also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm test-coverage`
+
+Launches the test runner to collect test coverage. (npm only)\
 
 ### `npm run build`
 
@@ -39,32 +43,28 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Design
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Clocks
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clock components `AnalogClock` and `DigitalClock` are designed to be used standalone.
 
-### Code Splitting
+Use CSS way to create clock, hands and digits in these clocks, however using svg or fonts could do the same way.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Customer Hook
 
-### Analyzing the Bundle Size
+A customer hook `useCurrentTime` to provide current hours, minutes and seconds.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### React Context
 
-### Making a Progressive Web App
+A React context providing current time object is to reflect `Segregate data from UI in a way that both layers could be used separately` in the requirement.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## CSS
 
-### Advanced Configuration
+Used plain css, however considering the complexity of the css code in this challenge, a preprocessor works better.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Unit tests
 
-### Deployment
+Used snapshots and got 100% covered.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To run unit tests with `react-script`, you may need to upgrade your node.js to >= v16.
